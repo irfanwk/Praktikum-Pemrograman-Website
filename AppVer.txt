@@ -1,2 +1,0 @@
-Format app version : Week.Commit
-App version : 0.3
