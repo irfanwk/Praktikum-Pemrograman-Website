@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE TRY CSS</title>
+    
+
+    <!-- <style>
+        li{
+            color: cadetblue;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            line-height: 3;
+        }
+
+        p{
+            color: yellowgreen;
+        }
+
+        header{
+            background-image: url('553684.jpg');
+            opacity: 0.5;
+        }
+    </style> -->
+
+</head>
+<body>
+    <header>
+        <h1 style="color: rebeccapurple">MUHAMMAD IRFAN WIRA KUSUMA</h1>
+        <!-- navbar -->
+        <nav>
+            <ul type="none">
+                <li><a href="#home">Home</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <div class="card-lagu">
+        <h2>Daftar <span class="highlight">Lagu</span></>
+
+        <div class="contoh-lagu">
+            <ul>
+                <li>lagu 1</li>
+                <li>lagu 2</li>
+            </ul>
+        </div>
+
+        <div class="button">
+            <button type="button" onclick="alert('Anda menekan tombol')">Klik saya</button>
+        </div>
+    </div>
+
+    <audio controls src="Roshidere.mp3">Browser anda tidka mendukung audio</audio>
+
+
+
+    <div class="Video">
+        <video controls width="400" height="300" 
+        src="videocontoh.mp4">Browser anda tidka mendukung video</video>
+    </div>
+
+    <div id="contactme">
+        <h3>Kontak Saya</h3>
+        <form action="">
+            <table border="1">
+                <tr>
+                    <td>
+                        <label for="name">Nama lengkap: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nim">NIM: </label>
+                    </td>
+                    <td>
+                        <input type="number" name="nim" id="nim" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jeniskelamin">Jenis Kelamin: </label>
+                    </td>
+                    <td>
+                        <input name="jeniskelamin" type="radio" value="pria""> pria
+                        <br>
+                        <input name="jeniskelamin" type="radio" value="wanita""> wanita
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hobi">Hobi</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobi">Hobi 1
+                        <input type="checkbox" name="hobi">Hobi 2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prodi">Program Studi: </label>
+                    </td>
+                    <td>
+                        <select name="prodi" id="prodi">
+                            <option value="ilmukomputer">Ilmu Komputer</option>
+                            <option value="CS" selected>Computer Science</option>
+                            <option value="TI">Teknologi Informasi</option>
+                        </select>
+                    </td>
+                </tr>
+                
+            </table>
+            <input type="submit" name="">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025. All Rights Reserved.</p>
+        <p>Created by Muhammad Irfan Wira Kusuma</p>
+    </footer>
+</body>
+</html>
