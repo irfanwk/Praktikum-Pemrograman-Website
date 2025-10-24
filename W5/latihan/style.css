@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+.page-header{
+    background-color: rgb(85, 84, 84);
+    color: white;
+    padding: 40px;
+}
+
+.main-article {
+    background-color: #fabfbf;
+    padding: 20px;
+}
+
+.page-footer {
+    background-color: rgb(238, 155, 0);
+    color: white;
+    padding: 15px;
+}
+
+#gambarartikel {
+    float: left;
+    width: 300px;
+}
+
+.main-article p h2 {
+    padding: 10px;
+}
+
+
