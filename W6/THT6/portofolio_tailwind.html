@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Desainer (template) - Tailwind</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-900">
+
+    <header class="bg-blue-600 text-white text-center p-4">
+        <h1 class="text-4xl font-bold">Portofolio Desainer Grafis</h1>
+    </header>
+
+    <main class="container mx-auto py-12 px-4">
+
+        <section id="bio">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="w-full md:w-1/3">
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://placehold.co/400x400" class="w-full h-auto" alt="Foto Profil Desainer">
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl font-bold text-blue-600">Nama Klien</h2>
+                    <p class="text-xl text-gray-700 mt-4">Ini adalah template bio singkat tentang desainer grafis. Saya memiliki keahlian dalam membuat desain visual yang menarik dan fungsional. Saya berfokus pada UI/UX, branding, dan ilustrasi digital. Kamu bebas untuk mengubah isi teks ini sesuai kebutuhan kamu sebagai klien.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 border-gray-200">
+
+        <section id="galeri">
+            <h2 class="text-3xl font-bold text-center mb-6">Galeri Proyek</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                
+                <div class="bg-white shadow-md rounded-lg">
+                    <img src="https://placehold.co/600x400" class="w-full h-auto rounded-t-lg" alt="Gambar Proyek 1">
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold">Proyek 1</h5>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-md rounded-lg">
+                    <img src="https://placehold.co/600x400" class="w-full h-auto rounded-t-lg" alt="Gambar Proyek 2">
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold">Proyek 2</h5>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-md rounded-lg">
+                    <img src="https://placehold.co/600x400" class="w-full h-auto rounded-t-lg" alt="Gambar Proyek 3">
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold">Proyek 3</h5>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-md rounded-lg">
+                    <img src="https://placehold.co/600x400" class="w-full h-auto rounded-t-lg" alt="Gambar Proyek 4">
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold">Proyek 4</h5>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-md rounded-lg">
+                    <img src="https://placehold.co/600x400" class="w-full h-auto rounded-t-lg" alt="Gambar Proyek 5">
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold">Proyek 5</h5>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-md rounded-lg">
+                    <img src="https://placehold.co/600x400" class="w-full h-auto rounded-t-lg" alt="Gambar Proyek 6">
+                    <div class="p-4">
+                        <h5 class="text-xl font-semibold">Proyek 6</h5>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="my-12 border-gray-200">
+
+        <section id="kontak">
+            <h2 class="text-3xl font-bold text-center mb-6">Hubungi Saya</h2>
+            <div class="max-w-2xl mx-auto">
+                <form>
+                    <div class="mb-4">
+                        <label for="nama" class="block text-sm font-medium text-gray-700">Nama Lengkap</label>
+                        <input type="text" id="nama" class="mt-1 block w-full appearance-none border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Alamat Email</label>
+                        <input type="email" id="email" class="mt-1 block w-full appearance-none border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="pesan" class="block text-sm font-medium text-gray-700">Pesan Anda</label>
+                        <textarea id="pesan" rows="4" class="mt-1 block w-full appearance-none border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </section>
+        </main>
+
+    <footer class="bg-blue-600 text-white text-center p-3 mt-12">
+        <p class="mb-0">&copy; 2025 Template Portofolio Desainer</p>
+    </footer>
+
+</body>
+</html>
