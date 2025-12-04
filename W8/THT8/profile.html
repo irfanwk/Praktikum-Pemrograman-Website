@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Muhammad Irfan Wira Kusuma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        // konfig tailwind custom untuk sekali pakai
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#6a3de8', 
+                        'primary-dark': '#532dbe',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+
+    <!-- Header -->
+    <header class="bg-white text-gray-800 py-4 shadow-sm border-b border-gray-200 fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center max-w-5xl">
+            <div class="flex items-center">
+                <img src="icon.png" alt="icon" class="w-12 h-12 mr-4 rounded-full object-cover bg-gray-300">
+                <a href="#" class="text-xl font-bold text-gray-800 no-underline hover:text-primary transition">Muhammad Irfan Wira Kusuma</a>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#hero" class="font-medium hover:text-primary transition">HOME</a></li>
+                    <li><a href="#projects" class="font-medium hover:text-primary transition">PROJECTS</a></li>
+                    <li><a href="#contact" class="font-medium hover:text-primary transition">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-20">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="h-screen flex justify-center items-center text-center px-6 bg-gray-100">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl font-extrabold text-gray-900 mb-4">HEY, SAYA MUHAMMAD IRFAN WIRA KUSUMA</h1>
+                <p class="text-xl text-gray-600 mb-8">Seorang mahasiswa Ilmu Komputer semester lima yang termotivasi di Universitas Pertamina, menggabungkan latar belakang yang kuat dalam pengembangan perangkat lunak dengan minat yang berkembang dalam machine learning.</p>
+                <a href="#projects" class="bg-primary hover:bg-primary-dark text-white py-3 px-8 rounded font-bold transition shadow-lg inline-block">PROJECTS</a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 px-6 max-w-5xl mx-auto">
+            
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-900">Pengalaman Kerja</h2>
+            <div class="mb-10 bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-semibold text-gray-800">Perpustakaan Universitas Pertamina (Paruh Waktu)</h3>
+                <p class="text-gray-500 italic mb-4">Agustus 2024 - Sekarang</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Memberikan bantuan langsung kepada mahasiswa dan pengunjung di meja sirkulasi.</li>
+                    <li>Memelihara koleksi perpustakaan dan membantu pemeriksaan stok rutin (stock opname).</li>
+                    <li>Membantu pustakawan dalam proses administrasi pencatatan buku baru.</li>
+                </ul>
+            </div>
+            
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-900 mt-16">Pengalaman Penelitian</h2>
+            <div class="mb-10 bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-semibold text-gray-800">Universitas Pertamina Research (UPERESEARCH)</h3>
+                <p class="text-gray-500 italic mb-4">Agustus - November 2024</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Anggota pengembangan Spot Sprayer Robot using template matching.</li>
+                    <li>Mengembangkan tampilan GUI berbasis PyQt5 dan algoritma template matching menggunakan Python.</li>
+                    <li>Membantu fase integrasi antara perangkat lunak dan perangkat keras robot.</li>
+                </ul>
+            </div>
+
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-900 mt-16">Pengalamaan Kepanitiaan</h2>
+            <div class="mb-10 bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-semibold text-gray-800">ICUPERTAIN 2024</h3>
+                <p class="text-gray-500 italic mb-4">Oktober - November 2024</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Anggota divisi logistik Konferensi Internasional tentang Teknologi Energi.</li>
+                    <li>Membantu persiapan dan distribusi materi konferensi.</li>
+                    <li>Memberikan dukungan logistik di lokasi selama konferensi.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="px-6 max-w-3xl mx-auto mb-10">
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-900">Kontak Saya</h2>
+            <p class="text-center text-gray-600 mb-8">Silakan tinggalkan pesan di bawah ini jika Anda ingin menghubungi saya.</p>
+
+            <!-- pesan berhasil dikirim -->
+            <div id="successMessage" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4 text-center">
+                <strong class="font-bold">Berhasil!</strong>
+                <span class="block sm:inline">Pesan Anda berhasil dikirim!</span>
+            </div>
+
+            <form id="contactForm" class="bg-white p-8 rounded-lg shadow-md border border-gray-200" novalidate>
+                <!-- Nama -->
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Nama</label>
+                    <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition" placeholder="Masukkan nama Anda">
+                    <!-- eeror text -->
+                    <p id="errorName" class="text-red-500 text-sm mt-1 hidden">Nama tidak boleh kosong.</p>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition" placeholder="contoh@email.com">
+                    <!-- error text -->
+                    <p id="errorEmail" class="text-red-500 text-sm mt-1 hidden">Email tidak boleh kosong.</p>
+                </div>
+
+                <!-- Pesan -->
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Pesan</label>
+                    <textarea id="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition" placeholder="Tulis pesan Anda di sini..."></textarea>
+                    <!-- error text -->
+                    <p id="errorMessage" class="text-red-500 text-sm mt-1 hidden">Pesan tidak boleh kosong.</p>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-6 rounded">
+                        Kirim Pesan
+                    </button>
+                </div>
+            </form>
+            
+            <p class="text-center mt-8 text-gray-500">Atau email manual ke <a href="mailto:irfan.wk.2705@gmail.com" class="text-primary hover:underline">irfan.wk.2705@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>&copy; 2025 Muhammad Irfan Wira Kusuma. All rights reserved.</p>
+    </footer>
+
+    <!-- js -->
+    <script src="script.js"></script>
+</body>
+</html>
