@@ -27,7 +27,7 @@ return new class extends Migration
         Schema::create('menus', function (Blueprint $table) {
             // TODO: Tulis kode pembuatan kolom di sini
             $table->id();
-            $table->foreignId('restoran_id')->constrained()->onDelete('cascade');
+            $table->foreignId('restoran_id')->constrained('restorans', 'id')->onDelete('cascade');
             $table->string('nama');
             $table->integer('harga');
             $table->integer('jumlah');
