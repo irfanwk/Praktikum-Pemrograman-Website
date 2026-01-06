@@ -13,12 +13,15 @@ class LoanController extends Controller
     public function index()
     {
         $items = Item::all();
-        return view('items.index', compact('items'));
+        $loans = auth()->user()->with('item')->where('status', 'borrowed')->get();
+        return view('items.index', compact('items', 'loans'));
     }
 
-    public function store(Request $request)
+    public function store(Request $request, Item $item){
+        if($item->stock<=0) return back();
+    }
     {
-        $item = Item::find($request->item_id);
+        if($item->stock<=0) return back();
 
         if ($item->total_stock > 0) {
             $item->decrement('total_stock');
