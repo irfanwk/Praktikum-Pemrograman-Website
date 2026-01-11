@@ -17,9 +17,13 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
+        $this->call(CategorySeeder::class);
+
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Admin',
+            'email' => 'admin@admin.com',
+            'password' => 'password', // Default factory password is 'password' or we can set it explicitly if needed
+            'is_admin' => true,
         ]);
     }
 }
